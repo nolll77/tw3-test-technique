@@ -1,6 +1,6 @@
 # TW3 Chatbot (test technique)
 
-Ce projet est un Chatbot qui utilise une API DuckDuckGo pour rechercher sur internet des informations et OpenRouter pour fournir les réponses.
+Ce projet est un Chatbot qui utilise l'API DuckDuckGo Search pour rechercher sur internet des informations et OpenRouter pour élaborer les réponses en langage naturel (et fournir aussi les sources), facilitant ainsi l'engagement des utilisateurs à utiliser et promouvoir cet outil dans le cadre d'une utilisation interne en entreprise.
 
 ## Quick steps
 
