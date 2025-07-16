@@ -21,7 +21,7 @@ npm run dev
 pnpm run dev
 ```
 
-L'application sera accessible sur http://localhost:3000
+L'application sera accessible sur http://localhost:3000 (ou http://localhost:5173)
 
 ## Build
 
@@ -34,5 +34,6 @@ pnpm run build
 
 ## Configuration
 
-Le frontend communique avec le backend sur le port 5000. Assurez-vous que le backend est démarré avant d'utiliser l'interface.
+Le frontend communique avec le backend sur le port 6000.
+Vérifier que le backend est bien démarré avant d'utiliser l'interface.
 
