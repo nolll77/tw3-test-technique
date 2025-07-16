@@ -1,77 +1,42 @@
-# TW3 Chatbot - Readme Backend
+# TW3 Chatbot (test technique)
 
-Backend Flask pour le chatbot TW3 (test technique) avec DuckDuckGo pour la recherche sur internet et openrouter.ia pour le 'provider' de LLM.
+Ce projet est un Chatbot qui utilise une API DuckDuckGo pour rechercher sur internet des informations et OpenRouter pour fournir les réponses.
 
-## Installation
+## Quick steps
 
-1. Cloner le projet
-2. Créer un environnement virtuel :
+### Backend
 ```bash
+cd chatbot-backend
 python -m venv venv
-source venv/bin/activate  # sur Mac
-# ou
-venv\Scripts\activate  # sur windows, mais pas pu tester
-```
-
-3. Installer les dépendances :
-```bash
+source venv/bin/activate
 pip install -r requirements.txt
-```
-
-4. Configurer les variables d'environnement :
-```bash
 cp .env.example .env
-```
-ensuite éditer le fichier `.env` et ajouter la clé API d'OpenRouter.
-
-## Config
-
-### Créer la clé API sur OpenRouter
-
-1. Aller sur https://openrouter.ai/
-2. Créer un compte, pusi créer une clé APi
-3. Aller dans le fichier `.env` pour coller la clé OpenRouter:
-```bash
-OPENROUTER_API_KEY=coller_cle_api_ici
-```
-### Secret Key Flask
-
-1. La Secret Key pour Flask est utilisée pour sécuriser les sessions. Créer une chaîne de caractères aléatoire et l'ajoutez au fichier .env
-```bash
-FLASK_SECRET_KEY=chaine_de_caracteres_aleatoire
-```
-
-## Utilisation
-
-Démarrer le serveur :
-```bash
+# Éditer .env et ajouter votre clé API OpenRouter
 python src/main.py
 ```
 
-Le serveur sera accessible sur http://localhost:6000
-
-## API
-
-### POST /api/chat
-Envoie une question au chatbot.
-
-**Body :**
-```json
-{
-  "message": "Votre question"
-}
+### Frontend
+```bash
+cd chatbot-frontend
+npm install
+npm run dev
 ```
 
-**Réponse :**
-```json
-{
-  "response": "Réponse du chatbot",
-  "sources": [
-    {
-      "title": "Titre de la source",
-      "url": "URL de la source"
-    }
-  ]
-}
-```
+## Configuration
 
+1. Créer une clé API sur https://openrouter.ai/
+2. Ajouter la clé dans `chatbot-backend/.env`
+4. Générer une Secret Key Flask et l'ajouter dans chatbot-backend/.env (voir le README du backend pour plus de détails)
+4. Démarrer le backend puis le frontend
+
+## Utilisation
+
+1. Ouvrir http://localhost:3000 (ou http://localhost:5173, voir output)
+2. Posez votre question
+3. TW3 Chatbot recherche sur Internet et génère une réponse, en donnant ses sources
+
+## Stack technique
+
+- **Backend** : Python, Flask, DuckDuckGo Search, OpenRouter
+- **Frontend** : React, CSS basique
+- **LLM** : qwen-2.5-72b-instruct:free (la 32b n'était pas disponible, sauf en version 'Coder' mais qui retournait des réponses hors sujet et/ou hors contexte)
