@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 4. Configurer les variables d'environnement :
 ```bash
-cp .env.example .env
+cp .env
 ```
 ensuite éditer le fichier `.env` et ajouter la clé API d'OpenRouter.
 
