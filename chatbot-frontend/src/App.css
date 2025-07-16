@@ -1,0 +1,83 @@
+/* CSS pour mon chatbot */
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+  margin-bottom: 30px;
+}
+
+.chat-box {
+  border: 2px solid black;
+  height: 500px;
+  overflow-y: scroll;
+  padding: 15px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.message-user {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: lightblue;
+  border-radius: 10px;
+  text-align: right;
+}
+
+.message-bot {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.sources-list {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid gray;
+}
+
+.sources-list a {
+  color: blue;
+  display: block;
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.input-section {
+  display: flex;
+}
+
+.input-section input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid black;
+  margin-right: 10px;
+}
+
+.input-section button {
+  padding: 15px 25px;
+  font-size: 16px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: darkblue;
+}
+
+.input-section button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+

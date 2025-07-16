@@ -1,0 +1,44 @@
+# débug car pb avec env local
+blinker==1.9.0
+certifi==2025.7.14
+charset-normalizer==3.4.2
+click==7.1.2
+duckduckgo_search==1.3
+Flask==2.2.5
+Flask-SQLAlchemy==3.1.1
+greenlet==3.2.3
+idna==3.10
+itsdangerous==2.2.0
+Jinja2==3.1.6
+lxml==6.0.0
+MarkupSafe==3.0.2
+primp==0.15.0
+requests==2.32.4
+SQLAlchemy==2.0.41
+typing_extensions==4.14.0
+urllib3==2.5.0
+Werkzeug==3.1.3
+
+
+# bonnes versions
+
+# blinker==1.9.0
+# certifi==2025.7.14
+# charset-normalizer==3.4.2
+# click==8.2.1
+# cduckduckgo_search==8.1.1
+# cFlask==3.1.1
+# cflask-cors==6.0.0
+# cFlask-SQLAlchemy==3.1.1
+# cgreenlet==3.2.3
+# cidna==3.10
+# itsdangerous==2.2.0
+# Jinja2==3.1.6
+# lxml==6.0.0
+# MarkupSafe==3.0.2
+# primp==0.15.0
+# requests==2.32.4
+# SQLAlchemy==2.0.41
+# typing_extensions==4.14.0
+# urllib3==2.5.0
+# Werkzeug==3.1.3
